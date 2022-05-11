@@ -1,0 +1,592 @@
+ {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+    background: rgb(9,47,121);
+    background: linear-gradient(90deg, rgba(9,47,121,1) 0%, rgba(255,251,255,1) 0%, rgba(0,138,255,1) 100%);
+     
+
+	/*display: flex;*/
+}
+
+.navbar {
+	width: 80%;
+	margin: auto;
+	padding: 5px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+	text-decoration: none;
+	font-family: arial;
+	transition: .5s;
+
+}
+
+.navbar a:hover {
+	color: yellowgreen;
+	background-color: hotpink;
+	border: none;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.navbar ul li a:after{
+	content: '';
+	background: #000;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 100%;
+	transition: 0.5s;
+}
+
+.checkbtn {
+	font-size: 30px;
+	color: whitesmoke;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+#check {
+	display: none;
+}
+
+
+@media (max-width: 952px){
+	
+
+	img {
+
+        padding-left: 50px;     
+		height: 50px;
+	}
+
+	.navbar ul li a {
+        font-size: 16px; 
+	}
+}
+
+@media (max-width: 858px) {
+	
+}
+
+
+
+
+
+/*
+ header {
+ 	text-align: center;
+ }
+
+.container{
+	background-color: aquamarine;
+	border: 0.5px solid white;
+	padding: 20px;
+	margin-right: 10px;
+}
+
+	
+
+
+.right{
+	float: right;
+	display: flex;
+	flex-direction: 20px;
+	padding: 2em;
+	align-items: center;
+	margin-right: 20px;
+
+
+
+}
+.images{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image: url(f.jpg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	background-color: none;
+}
+
+
+About Us{
+	background-color: linear-gradient(purple,white);
+
+}
+
+Log in{
+
+	background-color: whitesmoke;
+	width: 320;
+	height: 420;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+
+.f{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+    
+
+}
+
+h1{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.Log in p{
+	width: 100%;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+
+.Log in input{
+	width: 100px;
+	margin-bottom: 20px;
+}
+
+.Log in input[type="password"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.Log in input[type="Submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.Log in input[type="Submit"]:hover{
+	cursor: pointer;
+	background: #ffc107;
+	color: #000;
+}
+
+'Log in a{
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 20px;
+	color: darkgray;
+
+
+
+
+}
+.Log in a:hover{
+	color: #ffc107;
+
+
+
+
+
+/*for login css*/
+ {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.full-page{
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 50px;
+	float: center;
+	/*this is for setting the dimensions of the nabigation bar*/
+
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 70px;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+}
+nav ul li button{
+	font-size: 20px;
+	color: white;
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+nav ul li button:hover{
+	color: aqua;
+}
+nav ul li a:hover{
+	color: aqua;
+}
+a{
+	text-decoration: none;
+	color: palevioletred;
+	font-size: 28;
+}
+
+#login-form{
+	display: none;
+}
+.form-box{
+	width: 300px;
+	height: 480px;
+	position: relative;
+	margin: 2% auto;
+	background: raga(0,0,0,3);
+	padding: 10px;
+	overflow: hidden;
+}
+.button-box{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px #ff6124if;
+	border-radius: 30px;
+}
+.toggle-btn{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+	outline: none;
+	position: relative;
+
+}
+#btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login{
+	top: 150px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-group-register{
+	top: 120px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+}
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-top: 0;
+	border-right: 0;
+	border-bottom: 1px solid #999;
+	outline: none;
+	background: transparent;
+
+}
+.Submit-btn{
+	width: 85%;
+	padding: 10px ;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}	
+.check-box{
+	margin: 30px 10px 34px 0;
+}
+span{ 
+	color: #777;
+	font-size: 12px;
+	botton: 68px;
+	position: absolute;
+
+}
+#login{
+	left: 50px;
+}
+#login input{
+	color: white;
+	font-size: 15;
+
+}
+#Register{
+	left: 450px;
+}
+#Register input{
+	color: white;
+	font-size: 15;
+}
+#Register{
+	left: 450px;
+}
+#Register input{
+	color: white;
+	font-size: 15;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body {
+	background: linear-gradient(45deg,purple 50%, blue);
+}
+
+.container {
+	width: 50%;
+	height: 100px;
+	background: white;
+	display: flex;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: -200%;
+}
+
+
+/*for contact css*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+.contact{
+	position: relative;
+	min-height: 100vh;
+	padding: 50px 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-size: cover;
+	/*background: url();*/
+}
+.content .content{
+	max-width: 800px;
+	text-align: center;
+}
+.content .content{
+	font-size: 36px;
+	font-weight: 500;
+	color: #fff;
+}
+.content .content p
+{
+	font-size: 36px;
+	font-weight: 300;
+	color: #fff;
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+.container .contactInfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .contactInfo .box .icon{
+	min-width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+	display: flex;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+	flex-direction: column;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+	font-weight: 500;
+	color: #00bcd4;
+}
+
+.contactForm{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+.contactForm h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+
+}
+
+.contactForm .inputBox input
+.contactForm .inputBox textarea
+{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+}
+.contactForm .inputBox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5%;
+	color: #666;
+
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span,
+{
+	color: #e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+	width: 100px;
+	background: #00bcd4;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 18px;
+}
+@media (max-width: 991px){
+	.contact{
+		padding: 50px;
+	}
+	.container{
+		flex-direction: column;
+	}
+	.container .contactInfo{
+		margin-bottom: 40px;
+
+	}
+	.container .contactInfo{
+		width: 100%;
+	}
+}
